@@ -289,6 +289,7 @@ footer {
     background-color: #59B4C3;
     padding: 20px;
     z-index: 1000;
+    height: 100%;
 
 }
 
@@ -324,6 +325,7 @@ footer {
     padding: 10px;
     background-color: #eee;
     border-radius: 8px;
+    display: block;
 }
 
 .product-item img {
@@ -640,6 +642,7 @@ figure {
     .sticky {
         left: 0;
         width: 100%;
+        height: auto;
     }
 
     .products .col-md-4 {
