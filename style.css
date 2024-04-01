@@ -110,26 +110,26 @@ ul {
 }
 
 .hero-section {
-    background-color: #C4BB7D;
+    /* background-color: #C4BB7D; */
     padding-top: 120px !important;
 
 }
 
-.hero-section .row {
+.hero-section .hero-row {
     padding: 70px 0;
 }
 
 .hero-right-box,
 .hero-left-box {
     border: 2px solid #eee;
-    /* Border to frame the carousel */
     padding: 20px;
     border-radius: 12px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 #0000, 0 0 #0000, 6px 6px 0px rgba(0, 0, 0, .25);
 }
 
 .hero-right-box .carousel-item {
@@ -151,7 +151,7 @@ ul {
     font-size: 24px;
     font-weight: bold;
     margin-top: 15px;
-    color: #eee;
+    color: #111;
     text-align: center;
 }
 
@@ -160,15 +160,17 @@ ul {
 .featured-product-heading {
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 10px;
-    color: #eee;
+    margin-bottom: 30px;
+    color: #111;
+    text-align: center;
+
 
 }
 
 .featured-product-desc {
     font-size: 16px;
     font-weight: 500;
-    color: #eee;
+    color: #333;
 }
 
 .featured-product-btn {
@@ -190,7 +192,7 @@ ul {
 
 .video-section {
     padding: 50px 0;
-    background-color: #C4BB7D;
+    /* background-color: #C4BB7D; */
 
 }
 
@@ -200,7 +202,7 @@ ul {
 }
 
 .footer-shape {
-    background-color: #C4BB7D;
+    background-color: transparent;
 
 }
 
@@ -288,6 +290,10 @@ footer {
     align-items: center;
 }
 
+.bg-shape {
+    background-image: linear-gradient(to bottom, #c4bb7d9a, #c4bb7da2), url(./assets/img/IMG_4195.JPG);
+}
+
 .sub-hero-section h1 {
     font-size: 65px;
     font-weight: 700;
@@ -298,14 +304,14 @@ footer {
 
 .sub-hero-section p {
     font-size: 18px;
-    color: #ccc;
+    color: #ddd;
+    font-weight: 700;
     text-align: center;
 
 }
 
 .product-container {
     padding: 50px 0;
-    background-color: #C4BB7D;
 }
 
 .product-warpper {
@@ -334,7 +340,7 @@ footer {
 
 .categories h2 {
     font-size: 24px;
-    color: #ccc;
+    color: #fff;
     font-weight: 700;
 }
 
@@ -459,11 +465,11 @@ figure {
 }
 
 .owl-carousel .owl-item {
-    border: 1px solid transparent;
+    border: 2px solid transparent;
 }
 
 .current {
-    border: 2px solid #01a781 !important;
+    border: 2px solid #59B4C3 !important;
     overflow: hidden;
     border-radius: 6px;
 }
@@ -471,7 +477,6 @@ figure {
 .product-detiles-section {
     padding: 50px 0;
     padding-top: 100px !important;
-    background-color: #C4BB7D;
 }
 
 .owl-nav {
@@ -484,7 +489,7 @@ figure {
 
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev {
-    background-color: #01a781;
+    background-color: #59B4C3;
     color: #ccc;
     border-radius: 50%;
     height: 30px;
@@ -513,18 +518,22 @@ figure {
 
 .product-description {
     padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 #0000, 0 0 #0000, 6px 6px 0px rgba(0, 0, 0, .25);
+
 }
 
 .product-description h1 {
     font-size: 24px;
-    color: #fff;
+    color: #111;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
 .price {
     font-size: 18px;
-    color: #fff;
+    color: #111;
     font-weight: 500;
     margin-bottom: 10px;
 
@@ -532,7 +541,7 @@ figure {
 
 .write-up {
     font-size: 16px;
-    color: #eee;
+    color: #333;
     margin-bottom: 10px;
 
 }
@@ -540,7 +549,7 @@ figure {
 .product-description label {
     display: block;
     font-size: 16px;
-    color: #eee;
+    color: #333;
     margin-bottom: 5px;
 }
 
@@ -548,8 +557,8 @@ figure {
 .product-description #quantity {
     width: 50%;
     background-color: transparent;
-    border: 1px solid #ccc;
-    color: #fff;
+    border: 1px solid #333;
+    color: #111;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 15px;
