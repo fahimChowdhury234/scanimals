@@ -323,7 +323,7 @@ footer {
 .sticky {
     position: fixed;
     top: 0;
-    width: 15%;
+    width: 13.5%;
     background-color: #59B4C3;
     padding: 20px;
     z-index: 1000;
