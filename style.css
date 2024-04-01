@@ -53,10 +53,27 @@ ul {
     background-color: #211C6A;
     /* padding: 0 100px; */
     box-shadow: 0 2px 10px rgba(0, 0, 0, .3);
+    position: relative;
+
+}
+
+.main-header:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    background: url(./assets/img/shape.svg) repeat-x;
+    background-size: 1280px;
+    background-position: top;
+    z-index: 1;
+    bottom: -54px;
 }
 
 .navbar {
     justify-content: space-between !important;
+    padding: 0 30px;
+    height: 140px;
+    position: relative;
 }
 
 .navbar-expand-xl .offcanvas {
@@ -72,6 +89,9 @@ ul {
 .navbar-brand {
     padding: 0;
     margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .navbar-brand img {
@@ -85,13 +105,23 @@ ul {
 
 }
 
+.navbar-nav .nav-link.active {
+    color: #C4BB7D !important;
+}
+
+.hero-section {
+    background-color: #C4BB7D;
+    padding-top: 120px !important;
+
+}
+
 .hero-section .row {
     padding: 70px 0;
 }
 
 .hero-right-box,
 .hero-left-box {
-    border: 2px solid #eee;
+    border: 2px solid #888;
     /* Border to frame the carousel */
     padding: 20px;
     border-radius: 12px;
@@ -121,7 +151,7 @@ ul {
     font-size: 24px;
     font-weight: bold;
     margin-top: 15px;
-    color: #eee;
+    color: #111;
     text-align: center;
 }
 
@@ -131,14 +161,14 @@ ul {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #eee;
+    color: #111;
 
 }
 
 .featured-product-desc {
     font-size: 16px;
     font-weight: 500;
-    color: #eee;
+    color: #333;
 }
 
 .featured-product-btn {
@@ -149,7 +179,7 @@ ul {
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
-    color: #eee;
+    color: #111;
     display: inline-block;
     margin-top: 15px;
 }
@@ -160,11 +190,18 @@ ul {
 
 .video-section {
     padding: 50px 0;
+    background-color: #C4BB7D;
+
 }
 
 .video-section iframe {
     border-radius: 12px;
     width: 100%;
+}
+
+.footer-shape {
+    background-color: #C4BB7D;
+
 }
 
 footer {
@@ -255,8 +292,9 @@ footer {
     font-size: 56px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: #eee;
+    color: #fff;
     text-align: center;
+    font-family: sans-serif !important;
 }
 
 .sub-hero-section p {
@@ -268,6 +306,7 @@ footer {
 
 .product-container {
     padding: 50px 0;
+    background-color: #C4BB7D;
 }
 
 .product-warpper {
@@ -296,7 +335,7 @@ footer {
 
 .categories h2 {
     font-size: 24px;
-    color: #ccc;
+    color: #111;
     font-weight: 700;
 }
 
@@ -307,7 +346,7 @@ footer {
 
 .categories ul li {
     font-size: 16px;
-    color: #eee;
+    color: #333;
     padding: 10px 0;
 }
 
@@ -430,6 +469,8 @@ figure {
 
 .product-detiles-section {
     padding: 50px 0;
+    padding-top: 100px !important;
+    background-color: #C4BB7D;
 }
 
 .owl-nav {
@@ -475,14 +516,14 @@ figure {
 
 .product-description h1 {
     font-size: 24px;
-    color: #fff;
+    color: #111;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
 .price {
     font-size: 18px;
-    color: #fff;
+    color: #333;
     font-weight: 500;
     margin-bottom: 10px;
 
@@ -490,7 +531,7 @@ figure {
 
 .write-up {
     font-size: 16px;
-    color: #eee;
+    color: #333;
     margin-bottom: 10px;
 
 }
@@ -498,7 +539,7 @@ figure {
 .product-description label {
     display: block;
     font-size: 16px;
-    color: #eee;
+    color: #333;
     margin-bottom: 5px;
 }
 
@@ -506,8 +547,8 @@ figure {
 .product-description #quantity {
     width: 50%;
     background-color: transparent;
-    border: 1px solid #ccc;
-    color: #fff;
+    border: 1px solid #333;
+    color: #111;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -516,7 +557,7 @@ figure {
 .add-to-cart {
     padding: 8px 20px;
     background-color: #59B4C3;
-    color: #fff;
+    color: #111;
     font-size: 16px;
     font-weight: 500;
     display: block;
@@ -526,6 +567,11 @@ figure {
     margin-top: 10px;
 }
 
+@media screen and (max-width: 300px) {
+    .navbar {
+        justify-content: space-around !important;
+    }
+}
 
 @media only screen and (max-width: 768px) and (min-width: 200px) {
     .navbar-brand img {
@@ -552,6 +598,17 @@ figure {
 
     .product-detiles-section {
         padding: 25px 0;
+    }
+
+    .navbar {
+        height: 115px;
+        padding: 0 15px;
+    }
+
+    .navbar-brand {
+        position: relative;
+        left: 0;
+        transform: translateX(0%);
     }
 
     .navbar-nav .nav-link {
