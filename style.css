@@ -49,6 +49,17 @@ ul {
     list-style: none;
 }
 
+input,
+select,
+textarea {
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #111;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
 .main-header {
     background-color: #211C6A;
     /* padding: 0 100px; */
